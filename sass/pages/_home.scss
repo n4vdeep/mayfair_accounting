@@ -1,0 +1,176 @@
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 30rem 0;
+  margin-top: -40vh;
+
+  div {
+    padding-top: 2rem;
+
+    @include respond (tab-port) {
+      padding-top: 0;
+    }
+
+    @include respond(phone){
+      padding-top: 0;
+      padding-bottom: 16px;
+    }
+  }
+
+  @include respond (tab-port) {
+    padding: 18rem 0;
+    margin-top: -27vh;
+  }
+
+  @include respond (phone) {
+    padding: 11rem 20px;
+    margin-top: -27vh;
+  }
+
+}
+
+.section-features {
+  padding: 8rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-black, 0.8),
+    rgba($color-primary-dark, 0.4)),
+  url('../img/money-medium.jpg');
+  background-size: cover;
+  // -webkit-clip-path: polygon(0 23%, 100% 7%, 100% 83%, 0 100%);
+  // clip-path: polygon(0 23%, 100% 7%, 100% 83%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+  margin-top: -23rem; 
+  
+  // MEDIA QUERY FOR TABLET PORTRATE
+
+  @include respond (tab-port) {
+    padding: 0;
+    background-image: linear-gradient(
+    to right bottom,
+    rgba($color-black, 0.8),
+    rgba($color-primary-dark, 0.4)),
+  url('../img/money-medium.jpg');
+    // -webkit-clip-path: polygon(0 12%, 100% 8%, 100% 96%, 0 100%);
+    // clip-path: polygon(0 12%, 100% 8%, 100% 96%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
+    margin-top: -10vh;
+  }
+}
+
+  // MEDIA QUERY FOR MOBILE PHONES
+
+.section-tours {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0 15rem 0;
+  margin-top: -18rem;
+
+  // MEDIA QUERY FOR TABLET PORTRATE
+
+  @include respond (tab-port) {
+    padding: 10rem 0 10rem 0;
+  }
+
+}
+
+.section-stories {
+  position: relative;
+  padding: 15rem 0;
+  padding: 6rem 0 6rem 0;
+  margin-top: -1vh;
+
+  .row__aux {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+
+    @include respond(tab-port){
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+  }
+
+  div .row {
+    padding-top: 4rem;
+  }
+
+  @include respond(tab-port){
+    padding: 1rem 0 3rem 0;
+  }
+
+  @include respond(tab-port){
+    margin-top: -2vh;
+  }
+}
+
+// .section-book {
+//   padding: 15rem 0;
+//   background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+
+//   @include respond (tab-port) {
+//     padding: 10rem 0;
+//   }
+// }
+
+// .book {
+//   background-image: linear-gradient(105deg, 
+//                     rgba($color-white, .9) 0%,
+//                     rgba($color-white, .9) 50%,
+//                     transparent 50%), 
+//                     url();
+//   background-size: 100%;
+//   border-radius: 3px;
+//   box-shadow: 0 1.5rem 4rem rgba($color-black, .2); 
+
+//   @include respond(tab-land) {
+//     background-image: linear-gradient(105deg, 
+//                     rgba($color-white, .9) 0%,
+//                     rgba($color-white, .9) 65%,
+//                     transparent 65%) , 
+//                     url();
+//     background-size: cover;
+//   }
+
+//   @include respond(tab-port) {
+//     background-image: linear-gradient(to right, 
+//                     rgba($color-white, .9) 0%,
+//                     rgba($color-white, .9) 100%), 
+//                     url();
+//   }
+
+//   &__form {
+//     width: 50%;
+//     padding: 6rem;
+
+//     @include respond(tab-land) {
+//       width: 65%;
+//     }
+
+//     @include respond(tab-port) {
+//       width: 100%;
+//     }
+//    }
+// }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $color-primary; 
+  border-radius: 0;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color-secondary-light; 
+  border-radius: 0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $color-secondary-dark; 
+}

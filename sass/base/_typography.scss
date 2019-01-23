@@ -1,0 +1,109 @@
+body {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: $color-grey-dark;
+}
+
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 9vw;
+    font-weight: 400;
+    color: $color-secondary-light;
+    letter-spacing: 2rem;
+  
+    animation: moveInLeft 1s ease-out;
+    
+    @include respond(tab-port){
+      font-size: 13vw;
+      letter-spacing: 1.8rem;
+    }
+
+    @include respond(phone){
+      padding-top: 11rem;
+      padding-left: 10px;
+      letter-spacing: 1.3rem;
+      font-size: 6rem;
+    }
+  }
+  
+  &--sub {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2vw;
+    font-weight: 400;
+    color:$color-primary;
+    letter-spacing: 1.2vw;
+  
+    animation: moveInRight 1s ease-out;
+
+    @include respond(tab-port){
+      font-size: 3vw;
+      letter-spacing: 1.25rem;
+    }
+
+    @include respond(phone){
+      letter-spacing: .58rem;
+    }
+
+  }
+}
+
+.heading-secondary {
+  display: inline-block;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s;
+  font-family: 'Work Sans', sans-serif;
+  
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+    padding-top: 8rem;
+    margin: 0 11rem;
+  }
+
+  @include respond(phone){
+    font-size: 2.2rem;
+    padding-top: 9rem;
+    margin: 0;
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+
+  @include respond(tab-port){
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

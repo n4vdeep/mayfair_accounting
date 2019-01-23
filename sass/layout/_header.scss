@@ -1,0 +1,88 @@
+/* header background image styles */
+
+.header {
+  height: 85vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-black, 0.8),
+    rgba($color-primary-dark, 0.4)),
+  url('../img/city_aerial.jpg'); //should be a small image
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    height: 95vh;
+  }
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+      only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+      only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-black, 0.8),
+      rgba($color-primary-dark, 0.4)),
+    url('../img/city_aerial.jpg'); // high res image
+  }
+
+  @include respond(tab-port){ 
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 86vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 86vh, 0 100%)
+  }
+
+  @include respond(phone) {
+    height: 60vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    // clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+  }
+  
+  /* logo styles */
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+
+    @include respond(phone) {
+      position: absolute;
+      top: 2rem;
+      left: 2.5rem;
+    }
+  }
+
+  &__logo {
+    height: 10.5rem;
+
+    @include respond(tab-port) {
+      height: 10rem;
+    }
+
+    @include respond(phone) {
+      height: 6rem;
+    }
+  }
+  
+  /* call out styles */
+  
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    @include respond(phone){
+      position: absolute;
+      top: 34%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }
+}
