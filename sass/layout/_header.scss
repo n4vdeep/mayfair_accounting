@@ -56,6 +56,20 @@
     }
   }
 
+  &__contact {
+    position: absolute;
+    top: 6rem;
+    right: 7rem;
+
+    a {
+      text-decoration: none;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: $color-tertiary-light;
+    }
+  }
+
   &__logo {
     height: 10.5rem;
 

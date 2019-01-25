@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Work+Sans:100" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/ma_main_1.png">
+    <title>Mayfair | Contact</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo-box">
+      <a href="index.html" ><img src="img/ma_main_1.png" alt="Mayfair-Tax-Accounting-Logo" class="header__logo"></a> 
+    </div>
+
+    <div class="header__contact">
+        <a href="contact.html">Contact Us <span><i class="fal fa-envelope"></i></span></a>
+    </div>
+    
+    <div class="header__text-box">
+      <h1 class="heading-primary">
+        <span class="heading-primary--main">Mayfair</span>
+        <span class="heading-primary--sub">Accounting & Tax Ltd</span>
+      </h1>
+
+      <!-- <a href="#section-tours" class="btn btn--white btn--anim">Discover Our Tours</a> -->
+    </div>
+  </header>
+  
+  <main>
+    <section class="section-contact">
+      <div class="u-center-text">
+        <h2 class="heading-secondary">
+          Contact Us
+        </h2>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item1">
+          <h4>Mayfair Accounting & Tax LTD</h4>
+          <p>3rd Floor</p>
+          <p>10 Foster Lane</p>
+          <p>London</p>
+          <p>EC2V 6HH</p>
+          <a href="">enquire@mayfair.com</a>
+        </div>
+        <div class="grid-item2">
+          <div id="map"></div>
+          <script>
+            function initMap(){
+              var location = {lat: 51.515138, lng: -0.096232};
+              var map = new google.maps.Map(document.getElementById("map"), {
+                  zoom: 4,
+                  center: location
+              });
+              var marker = new google.maps.Marker({
+                position: location,
+                map: map
+              });
+            }
+          </script>
+          <script async defer src"https://maps.googleapis.com/maps/api/js?key=AIzaSyBmQYy1ApZikoXMhqBt_pZFpRgXwbXsyEo&callback=initMap"></script>
+        </div>
+        <div class="grid-item3">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="name" class="form-control" id="name" placeholder="Name">
+              </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Equiry:</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Accounting</option>
+                <option>Tax</option>
+                <option>More Services</option>
+                <option>New Services</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Message:</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="16"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+      <div class="footer__logo-box">
+        <picture class="footer__logo">
+          <source srcset="img/MA_Main.png"
+                  media="(max-width: 37.5em)">
+            <img srcset="img/MA_Main.png" alt="Full logo" src=""> <!--Requires small and large image sets-->
+        </picture>
+      </div>
+      <div class="row__aux--footer">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row__aux--footer">
+          <div class="col-1-of-2">
+            <ul class="footer__list">
+              <li class="footer__item">Copyright &copy; Mayfair Accounting & Tax LTD.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

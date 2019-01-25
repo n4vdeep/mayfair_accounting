@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Work+Sans:100" rel="stylesheet">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
         <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/ma_main_1.png">
         <title>Mayfair | Accounting & Tax LTD</title>
@@ -33,9 +34,15 @@
         </nav>
       </div> -->
 
+      
+
       <header class="header">
         <div class="header__logo-box">
           <a href="index.html" ><img src="img/ma_main_1.png" alt="Mayfair-Tax-Accounting-Logo" class="header__logo"></a> 
+        </div>
+
+        <div class="header__contact">
+            <a href="contact.html">Contact Us <span><i class="fal fa-envelope"></i></span></a>
         </div>
         
         <div class="header__text-box">
@@ -138,7 +145,7 @@
                     <li>Mortgage Advise</li>
                     <li>Business Start-up</li>
                     <li>Tax Planning</li>
-                    <li>&nbsp;</li>
+                    <li><div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=london%20city&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/webseite-erstellen-lassen/"></a></div><style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></li>
                   </ul>
                 </div>
               </div>
@@ -288,24 +295,73 @@
         </div>
       </footer>
 
-      <div class="popup" id="popup">
+      <!-- <div class="popup" id="popup">
         <div class="popup__content">
           <div class="popup__left">
-            <img src="" alt="Tour Photo" class="popup__img">
-            <img src="" alt="Tour Photo" class="popup__img">
+            <img src="img/accounting.jpeg" alt="Tour Photo" class="popup__img">
+            <img src="img/calculator.jpeg" alt="Tour Photo" class="popup__img">
           </div>
           <div class="popup__right">
             <a href="#section-tours" class="popup__close">&times;</a>
-            <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
-            <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
-            <p class="popup__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla ut morbi tincidunt augue. Urna neque viverra justo nec ultrices dui sapien eget. Bibendum ut tristique et egestas quis ipsum suspendisse. Aliquam sem fringilla ut morbi tincidunt augue interdum velit. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt.
-            </p>
-            <a href="#" class="btn btn--green">Book Now</a>
+            <form action="#" class="form">
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary">
+                  Start booking now
+                </h2>
+              </div>
+        
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                <label for="name" class="form__label">Full name</label>
+              </div>
+              
+              <div class="form__group">
+                <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                <label for="email" class="form__label">Email address</label>
+              </div>
+
+              <div class="form__group u-margin-bottom-medium">
+                <div class="form__radio-group">
+                  <input type="radio" class="form__radio-input" id="small" name="size">
+                  <label for="small" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    Small Tour Group
+                  </label>
+                </div>
+              
+                <div class="form__radio-group">
+                  <input type="radio" class="form__radio-input" id="large" name="size">
+                  <label for="medium" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                    Medium Tour Group
+                  </label>
+                </div>
+
+                <div class="form__radio-group">
+                  <input type="radio" class="form__radio-input" id="large" name="size">
+                  <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                    Large Tour Group
+                  </label>
+                </div>
+
+                <div class="form__radio-group">
+                  <input type="radio" class="form__radio-input" id="large" name="size">
+                  <label for="xlarge" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                    xLarge Tour Group
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <button class="btn btn--green">Submit &rarr;</button>
+              </div>
+            </form>
           </div>
-        </div>
-      </div>
-      
+          
+        </div> 
+      </div>-->
+
       <!-- GRID BOILER PLATE-->
       <!--
       <section class="grid-test">
@@ -376,5 +432,5 @@
         </div>
       </section>
       -->
-    </body>
+  </body>
 </html>
