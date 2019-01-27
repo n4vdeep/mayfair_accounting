@@ -1250,7 +1250,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .section-about div {
         padding-top: 0;
-        padding-bottom: 16px; } }
+        padding-bottom: 40px; } }
   @media only screen and (max-width: 56.25em) {
     .section-about {
       padding: 18rem 0;
@@ -1273,7 +1273,7 @@ body {
       background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(25, 108, 164, 0.4)), url("../img/money-medium.jpg");
       -webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
       clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
-      margin-top: -5vh; } }
+      margin-top: -12vh; } }
 
 .section-tours {
   background-color: #f7f7f7;
