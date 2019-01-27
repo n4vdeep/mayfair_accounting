@@ -1,7 +1,7 @@
 .section-about {
   background-color: $color-grey-light-1;
   padding: 30rem 0;
-  margin-top: -40vh;
+  margin-top: -33vh;
 
   div {
     padding-top: 2rem;
@@ -18,12 +18,12 @@
 
   @include respond (tab-port) {
     padding: 18rem 0;
-    margin-top: -27vh;
+    margin-top: -18vh;
   }
 
   @include respond (phone) {
     padding: 11rem 20px;
-    margin-top: -27vh;
+    margin-top: -22vh;
   }
 
 }
@@ -97,10 +97,11 @@
 
   @include respond(tab-port){
     padding: 1rem 0 3rem 0;
+    margin-top: -2vh;
   }
 
-  @include respond(tab-port){
-    margin-top: -2vh;
+  @include respond(phone){
+    margin-top: -6vh;
   }
 }
 

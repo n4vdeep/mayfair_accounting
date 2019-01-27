@@ -406,6 +406,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .composition {
       padding-top: 110px; } }
+  @media only screen and (max-width: 37.5em) {
+    .composition {
+      margin-top: 40px; } }
   .composition__photo {
     width: 55%;
     border-radius: 2px;
@@ -1063,9 +1066,11 @@ body {
       font-size: 18px; }
     .grid-container .grid-item1 a {
       font-size: 16px; }
-  .grid-container .grid-item2 #map {
-    width: 100%;
-    height: 500px; }
+  .grid-container .grid-item2 {
+    padding: 18px; }
+    .grid-container .grid-item2 #map {
+      width: 100%;
+      height: 500px; }
   .grid-container .grid-item3 {
     padding: 0;
     font-size: 16px;
@@ -1078,7 +1083,7 @@ body {
 .section-about {
   background-color: #f7f7f7;
   padding: 30rem 0;
-  margin-top: -40vh; }
+  margin-top: -33vh; }
   .section-about div {
     padding-top: 2rem; }
     @media only screen and (max-width: 56.25em) {
@@ -1091,11 +1096,11 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-about {
       padding: 18rem 0;
-      margin-top: -27vh; } }
+      margin-top: -18vh; } }
   @media only screen and (max-width: 37.5em) {
     .section-about {
       padding: 11rem 20px;
-      margin-top: -27vh; } }
+      margin-top: -22vh; } }
 
 .section-features {
   padding: 8rem 0;
@@ -1136,10 +1141,11 @@ body {
     padding-top: 4rem; }
   @media only screen and (max-width: 56.25em) {
     .section-stories {
-      padding: 1rem 0 3rem 0; } }
-  @media only screen and (max-width: 56.25em) {
-    .section-stories {
+      padding: 1rem 0 3rem 0;
       margin-top: -2vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-stories {
+      margin-top: -6vh; } }
 
 .section-contact {
   margin: 0;

@@ -5,6 +5,11 @@
   @include respond(tab-port){
     padding-top: 110px;
   }
+
+  @include respond(phone){
+    margin-top: 40px;
+  }
+  
   
   &__photo {
     width: 55%;
