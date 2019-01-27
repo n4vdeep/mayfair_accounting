@@ -23,7 +23,7 @@
 
   @include respond (phone) {
     padding: 11rem 20px;
-    margin-top: -22vh;
+    margin-top: -18vh;
   }
 
 }
@@ -55,7 +55,7 @@
     // clip-path: polygon(0 12%, 100% 8%, 100% 96%, 0 100%);
     -webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
-    margin-top: -10vh;
+    margin-top: -5vh;
   }
 }
 
@@ -86,7 +86,7 @@
 
     @include respond(tab-port){
       padding-top: 2rem;
-      padding-bottom: 2rem;
+      padding-bottom: 5rem;
     }
 
   }
@@ -108,55 +108,17 @@
 .section-contact {
   margin: 0;
   padding: 0;
+  margin-top: -1vh;
+
+  @include respond(tab-port){
+    margin-top: 3vh;
+  }
+
+  @include respond(phone){
+    margin-top: -1vh;
+  }
+
 }
-// .section-book {
-//   padding: 15rem 0;
-//   background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-
-//   @include respond (tab-port) {
-//     padding: 10rem 0;
-//   }
-// }
-
-// .book {
-//   background-image: linear-gradient(105deg, 
-//                     rgba($color-white, .9) 0%,
-//                     rgba($color-white, .9) 50%,
-//                     transparent 50%), 
-//                     url();
-//   background-size: 100%;
-//   border-radius: 3px;
-//   box-shadow: 0 1.5rem 4rem rgba($color-black, .2); 
-
-//   @include respond(tab-land) {
-//     background-image: linear-gradient(105deg, 
-//                     rgba($color-white, .9) 0%,
-//                     rgba($color-white, .9) 65%,
-//                     transparent 65%) , 
-//                     url();
-//     background-size: cover;
-//   }
-
-//   @include respond(tab-port) {
-//     background-image: linear-gradient(to right, 
-//                     rgba($color-white, .9) 0%,
-//                     rgba($color-white, .9) 100%), 
-//                     url();
-//   }
-
-//   &__form {
-//     width: 50%;
-//     padding: 6rem;
-
-//     @include respond(tab-land) {
-//       width: 65%;
-//     }
-
-//     @include respond(tab-port) {
-//       width: 100%;
-//     }
-//    }
-// }
 
 /* width */
 ::-webkit-scrollbar {

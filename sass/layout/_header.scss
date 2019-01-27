@@ -30,8 +30,9 @@
   }
 
   @include respond(tab-port){ 
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 86vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 86vh, 0 100%)
+    height: 60vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
   }
 
   @include respond(phone) {
@@ -58,8 +59,8 @@
 
   &__contact {
     position: absolute;
-    top: 6rem;
-    right: 7rem;
+    top: 4rem;
+    right: 4rem;
 
     a {
       text-decoration: none;
@@ -68,6 +69,19 @@
       text-transform: uppercase;
       color: $color-tertiary-light;
     }
+
+    @include respond(phone) {
+      position: absolute;
+      top: 3rem;
+      right: 3rem;
+    }
+
+    @include respond(phone) {
+      position: absolute;
+      top: 2rem;
+      right: 3rem;
+    }
+
   }
 
   &__logo {
@@ -94,6 +108,131 @@
     @include respond(phone){
       position: absolute;
       top: 34%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }
+}
+
+/* ----------------------------------------------- CONTACT PAGE */
+
+.header-contact {
+  height: 85vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-black, 0.8),
+    rgba($color-primary-dark, 0.4)),
+  url('../img/contact.jpeg'); //should be a small image
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    height: 95vh;
+  }
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+      only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+      only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-black, 0.8),
+      rgba($color-primary-dark, 0.4)),
+    url('../img/contact.jpeg'); // high res image
+  }
+
+  @include respond(tab-port){ 
+    height: 60vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+  }
+
+  @include respond(phone) {
+    height: 60vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    // clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+  }
+  
+  /* logo styles */
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+
+    @include respond(phone) {
+      position: absolute;
+      top: 2rem;
+      left: 2.5rem;
+    }
+  }
+
+  &__contact {
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+
+    a {
+      text-decoration: none;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: $color-tertiary-light;
+    }
+
+    @include respond(phone) {
+      position: absolute;
+      top: 1rem;
+      right: 3rem;
+    }
+
+    @include respond(phone) {
+      position: absolute;
+      top: 2rem;
+      right: 3rem;
+    }
+
+  }
+
+  &__logo {
+    height: 10.5rem;
+
+    @include respond(tab-port) {
+      height: 10rem;
+    }
+
+    @include respond(phone) {
+      height: 6rem;
+    }
+  }
+  
+  /* call out styles */
+  
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    @include respond(tab-port){
+      position: absolute;
+      top: 48%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    @include respond(phone){
+      position: absolute;
+      top: 32%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;

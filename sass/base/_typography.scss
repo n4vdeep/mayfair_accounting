@@ -48,11 +48,12 @@ body {
 
     @include respond(tab-port){
       font-size: 3vw;
-      letter-spacing: 1.25rem;
+      letter-spacing: 1.6rem;
     }
 
     @include respond(phone){
-      letter-spacing: .58rem;
+      letter-spacing: .9rem;
+      padding-left: 11px;
     }
 
   }
@@ -105,5 +106,33 @@ body {
   
   &:not(:last-child) {
     margin-bottom: 3rem;
+  }
+}
+
+.heading-contact {
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 9vw;
+    font-weight: 400;
+    color: $color-white;
+    letter-spacing: 2rem;
+    
+    @include respond(tab-port){
+      font-size: 13vw;
+      letter-spacing: 1.8rem;
+    }
+
+    @include respond(phone){
+      padding-top: 11rem;
+      padding-left: 10px;
+      letter-spacing: 1.1rem;
+      font-size: 6rem;
+    }
   }
 }
