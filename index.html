@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
         <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src='https://www.google.com/recaptcha/api.js'></script>
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/ma_main_1.png">
         <title>Mayfair | Accounting & Tax LTD</title>
@@ -43,8 +44,6 @@
             <span class="heading-primary--main">Mayfair</span>
             <span class="heading-primary--sub">Accounting & Tax Ltd</span>
           </h1>
-
-          <!-- <a href="#section-tours" class="btn btn--white btn--anim">Discover Our Tours</a> -->
         </div>
       </header>
 
@@ -65,7 +64,7 @@
                   conversation to see where we can assist you.
                 </p>
 
-                <a href="#" class="btn-text">Learn More &rarr;</a>
+                <a href="#popup" class="btn-text">Learn More &rarr;</a>
             </div>
             <div class="col-1-of-2">
               <div class="composition">
@@ -178,10 +177,6 @@
 
           <div class="row__aux">
             <div class="story">
-              <!-- <figure class="story__shape">
-                <img src="" alt="Person on a tour" class="story__img">
-                <figcaption class="story__caption">Mary Smith</figcaption>
-              </figure> -->
               <div class="story__text">
                 <h3 class="heading-tertiary u-margin-bottom-small">"always on hand to deal with my queries"</h3>
                 <p>
@@ -194,10 +189,6 @@
 
           <div class="row__aux">
             <div class="story">
-              <!-- <figure class="story__shape">
-                <img src="" alt="Person on a tour" class="story__img">
-                <figcaption class="story__caption">Jack Wilson</figcaption>
-              </figure> -->
               <div class="story__text">
                 <h3 class="heading-tertiary u-margin-bottom-small">Iste facere alias aliquid labore dicta</h3>
                 <p>
@@ -206,58 +197,7 @@
               </div>
             </div>
           </div>
-
-          <!-- <div class="u-center-text">
-            <a href="#" class="btn-text">Read all stories &rarr;</a>
-          </div> -->
         </section>
-
-        <!-- <section class="section-book">
-          <div class="row">
-            <div class="book">
-              <div class="book__form">
-                <form action="#" class="form">
-                  <div class="u-margin-bottom-medium">
-                    <h2 class="heading-secondary">
-                      Start booking now
-                    </h2>
-                  </div>
-            
-                  <div class="form__group">
-                    <input type="text" class="form__input" placeholder="Full Name" id="name" required>
-                    <label for="name" class="form__label">Full name</label>
-                  </div>
-                  
-                  <div class="form__group">
-                    <input type="email" class="form__input" placeholder="Email address" id="email" required>
-                    <label for="email" class="form__label">Email address</label>
-                  </div>
-
-                  <div class="form__group u-margin-bottom-medium">
-                    <div class="form__radio-group">
-                      <input type="radio" class="form__radio-input" id="small" name="size">
-                      <label for="small" class="form__radio-label">
-                        <span class="form__radio-button"></span>
-                        Small Tour Group
-                      </label>
-                    </div>
-                  
-                    <div class="form__radio-group">
-                      <input type="radio" class="form__radio-input" id="large" name="size">
-                      <label for="large" class="form__radio-label">
-                          <span class="form__radio-button"></span>
-                        Large Tour Group
-                      </label>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <button class="btn btn--green">Next Steps &rarr;</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section> -->
       </main>
 
       <footer class="footer">
@@ -281,7 +221,7 @@
           <div class="row__aux--footer">
             <div class="col-1-of-2">
               <ul class="footer__list">
-                <li class="footer__item">Copyright &copy; Mayfair Accounting & Tax LTD.</li>
+                <li class="footer__item">Copyright &copy; Mayfair Accounting & Tax LTD 2019</li>
               </ul>
             </div>
           </div>
@@ -290,71 +230,17 @@
 
       <!-- <div class="popup" id="popup">
         <div class="popup__content">
-          <div class="popup__left">
-            <img src="img/accounting.jpeg" alt="Tour Photo" class="popup__img">
-            <img src="img/calculator.jpeg" alt="Tour Photo" class="popup__img">
+          <div class="popup__grid-container">
+            <div class="popup__grid-itemL">
+              <p>We are a friendly team made up of expereinced accountants and financial advisors who are here to support, advise and take your business to the next level. We work with individuals and businesses in various sectors from building and construction, financial services, recruitment, haulage and social media.</p>
+            </div>
           </div>
-          <div class="popup__right">
+          <div class="popup__grid-itemR">
             <a href="#section-tours" class="popup__close">&times;</a>
-            <form action="#" class="form">
-              <div class="u-margin-bottom-medium">
-                <h2 class="heading-secondary">
-                  Start booking now
-                </h2>
-              </div>
-        
-              <div class="form__group">
-                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
-                <label for="name" class="form__label">Full name</label>
-              </div>
-              
-              <div class="form__group">
-                <input type="email" class="form__input" placeholder="Email address" id="email" required>
-                <label for="email" class="form__label">Email address</label>
-              </div>
-
-              <div class="form__group u-margin-bottom-medium">
-                <div class="form__radio-group">
-                  <input type="radio" class="form__radio-input" id="small" name="size">
-                  <label for="small" class="form__radio-label">
-                    <span class="form__radio-button"></span>
-                    Small Tour Group
-                  </label>
-                </div>
-              
-                <div class="form__radio-group">
-                  <input type="radio" class="form__radio-input" id="large" name="size">
-                  <label for="medium" class="form__radio-label">
-                      <span class="form__radio-button"></span>
-                    Medium Tour Group
-                  </label>
-                </div>
-
-                <div class="form__radio-group">
-                  <input type="radio" class="form__radio-input" id="large" name="size">
-                  <label for="large" class="form__radio-label">
-                      <span class="form__radio-button"></span>
-                    Large Tour Group
-                  </label>
-                </div>
-
-                <div class="form__radio-group">
-                  <input type="radio" class="form__radio-input" id="large" name="size">
-                  <label for="xlarge" class="form__radio-label">
-                      <span class="form__radio-button"></span>
-                    xLarge Tour Group
-                  </label>
-                </div>
-              </div>
-              <div class="form-group">
-                <button class="btn btn--green">Submit &rarr;</button>
-              </div>
-            </form>
+            <p>We are a friendly team made up of expereinced accountants and financial advisors who are here to support, advise and take your business to the next level. We work with individuals and businesses in various sectors from building and construction, financial services, recruitment, haulage and social media.</p>
           </div>
-          
-        </div> 
-      </div>-->
-
+        </div>      
+      </div> -->
       <!-- GRID BOILER PLATE-->
       <!--
       <section class="grid-test">

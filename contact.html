@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/ma_main_1.png">
     <title>Mayfair | Contact</title>
@@ -29,12 +30,13 @@
     <section class="section-contact">
       <div class="grid-container">
         <div class="grid-item1">
-          <h4>Mayfair Accounting & Tax LTD</h4>
+          <h3>Registared Office Address:</h3>
+          <p>Mayfair Accounting & Tax LTD</p>
           <p>3rd Floor</p>
           <p>10 Foster Lane</p>
           <p>London</p>
           <p>EC2V 6HH</p>
-          <a href="">enquire@mayfair.com</a>
+          <a href="">enquire@mayfair-accounting.co.uk</a>
         </div>
         <div class="grid-item2">
           <div id="map"></div>
@@ -77,7 +79,14 @@
               <label for="exampleFormControlTextarea1">Message:</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="16"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="validation-grid-container">
+              <div class="validation-grid-item1">
+                <div class="g-recaptcha" data-sitekey="6LeSSI0UAAAAAJREfKcamnngvABw9lbeBK7L0dBz"></div>
+              </div>
+              <div class="validation-grid-item2">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
           </form>
         </div>
       </div>
@@ -104,7 +113,7 @@
         <div class="row__aux--footer">
           <div class="col-1-of-2">
             <ul class="footer__list">
-              <li class="footer__item">Copyright &copy; Mayfair Accounting & Tax LTD.</li>
+              <li class="footer__item">Copyright &copy; Mayfair Accounting & Tax LTD 2019</li>
             </ul>
           </div>
         </div>
