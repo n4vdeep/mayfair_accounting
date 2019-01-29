@@ -1,7 +1,7 @@
 .navigation {
 
   &__checkbox {
-    display: inline;
+    display: none;
   }
 
   &__button {
@@ -35,7 +35,7 @@
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
-    background-image: radial-gradient($color-primary-light, $color-primary-dark);
+    background-image: radial-gradient($color-secondary-dark, $color-primary-light);
     z-index: 1000;
     transition: transform .8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
@@ -84,21 +84,26 @@
       color: $color-white;
       text-decoration: none;
       text-transform: uppercase;
-      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+      background-image: linear-gradient(112deg, transparent 0%, transparent 51%, $color-white 51%);
       background-size: 225%;
       transition: all .4s;
 
-      span {
-        display: inline-block;
-        margin-right: 1rem;
+      @include respond(tab-port) {
+        top: 4.5rem;
+        right: 4.5rem;
       }
+  
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+
     }
 
     &:hover,
     &:active {
       background-position: 100%;
       color: $color-primary;
-      transform: translateY(-.5rem) translateX(.3rem); 
+      transform: translateY(-.6rem) translateX(.3rem); 
     }
   }
 
