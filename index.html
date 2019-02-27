@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Work+Sans:100" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/ma_main_1.png">
@@ -59,11 +59,14 @@
                 conversation to see where we can assist you.
               </p>
 
-              <a href="#popup" class="btn-text">Learn More &rarr;</a>
+              <!-- Button trigger modal -->
+              <a href="#" class="btn-text" data-toggle="modal" data-target="#learnMore">
+                  Learn More &rarr;
+              </a>
+
           </div>
           <div class="col-1-of-2">
             <div class="composition">
-
               <img srcset="img/accounting-small.jpg 300w, img/accounting.jpeg 1000w"
                     sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                     alt="Photo 1"
@@ -140,14 +143,16 @@
           <div class="col-1-of-4">
             <div class="feature-box">
               <i class="feature-box__icon far fa-external-link-alt"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">New Services</h3>
+              <h3 class="heading-tertiary u-margin-bottom-small">New Financial Services In</h3>
               <div class="feature-box__text">
                 <ul>
                   <li>Social Media</li>
                   <li>Music</li>
                   <li>Entertainment</li>
-                  <li>&nbsp;</li>
-                  <li><a href="#" class="btn-text">Read More &rarr;</a></li>
+                  <!-- <li>&nbsp;</li> -->
+                  <a href="#" class="btn-text" data-toggle="modal" data-target="#moreServices">
+                    Read More &rarr;
+                </a>
                 </ul>
               </div>
             </div>
@@ -165,7 +170,7 @@
         </div>
 
         <div class="u-center-text">
-          <h2 class="heading-secondary u-margin-bottom-large">
+          <h2 class="heading-secondary">
             What our customers say about us
           </h2>
         </div>
@@ -175,54 +180,119 @@
             <div class="story__text">
               <h3 class="heading-tertiary u-margin-bottom-small">"always on hand to deal with my queries"</h3>
               <p>
-                'After starting my own company, I joined Mayfair Accounting as recommended by a friend who had already dealt with them. They are very easy communicate with, meet and is always on hand to deal with my queries. With Mayfair doing my accounting I have peace of mind that everything will be done correctly and on time so can focus on running the business’
+                'After starting my own company, I joined Mayfair Accounting as recommended by a friend who had already dealt with them. They are very easy to communicate with, easy to meet and are always on hand to deal with my queries. With Mayfair doing my accounting I have peace of mind that everything will be done correctly and on time so can focus on running the business’
               </p>
                 <p class="story__quotes">- Andrew Marr, Director of Nurture Education Ltd</p>
             </div>
           </div>
         </div>
 
-        <!-- <div class="row__aux">
+        <div class="row__aux">
           <div class="story">
             <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">Iste facere alias aliquid labore dicta</h3>
+              <h3 class="heading-tertiary u-margin-bottom-small">"thorough and managed to submit my returns online well before cut off"</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere alias aliquid labore dicta quis illum possimus? Adipisci, ducimus rerum. Illum, sequi nihil? Error, numquam repudiandae non aliquid quasi voluptate. Adipisci, ducimus rerum. Illum, sequi nihil? Error, numquam repudiandae non aliquid quasi voluptate. Explicabo illum vel commodi officia id magni molestiae magnam cupiditate eaque exercitationem eos Assumenda facilis earum esse quibusdam quisquam necessitatibus.
+                I have used Mayfair Accounting & Tax to file my sole trader tax returns for 4 years. He was very thorough and managed to submit my returns online well before the cut off point meaning that I avoided the unnecessary stress of a late filing and possible penalties. Highly recommended accountancy services which delivered what I needed. Great for self employed professions and my peace of mind.
               </p>
+              <p class="story__quotes">- Paul Saunders, Saunders Transport</p>
             </div>
           </div>
-        </div> -->
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__logo-box">
-        <picture class="footer__logo">
-          <source srcset="img/MA_Main.png"
-                  media="(max-width: 37.5em)">
-            <img srcset="img/MA_Main.png" alt="Full logo" src=""> <!--Requires small and large image sets-->
-        </picture>
-      </div>
-      <div class="row__aux--footer">
-        <div class="col-1-of-2">
-          <div class="footer__navigation">
-            <ul class="footer__list">
-              <li class="footer__item"><a href="contact.html" class="footer__link">Contact us</a></li>
-              <li class="footer__item"><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
-              <li class="footer__item"><a href="terms.html" class="footer__link">Terms & Conditions</a></li>
-            </ul>
-          </div>
+      <div class="grid-container">
+        <div class="grid-item">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="contact.html" class="footer__link">Contact us</a></li>
+            <li class="footer__item"><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+            <li class="footer__item"><a href="terms.html" class="footer__link">Terms & Conditions</a></li>
+          </ul>
         </div>
-        <div class="row__aux--footer">
-          <div class="col-1-of-2">
-            <ul class="footer__list">
-              <li class="footer__item">Copyright &copy; Mayfair Accounting & Tax LTD 2019</li>
-            </ul>
-          </div>
+        <div class="grid-item">
+          <picture class="footer__logo">
+            <source srcset="img/MA_Main.png"
+                    media="(max-width: 37.5em)">
+              <img srcset="img/MA_Main.png" alt="Full logo" src=""> <!--Requires small and large image sets-->
+            </picture>
+            <div class="copyright">
+              <p>Copyright &copy; Mayfair Accounting & Tax Ltd 2019</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h4>Registared Office Address:</h4>
+            <p>Mayfair Accounting & Tax LTD</p>
+            <p>3rd Floor</p>
+            <p>10 Foster Lane</p>
+            <p>London</p>
+            <p>EC2V 6HH</p>
+            <br>
+            <p><i class="fal fa-phone"></i>&nbsp;&nbsp;Tel: 020 8289 6160</p>
+            <p><i class="fal fa-envelope"></i>&nbsp;&nbsp;enquire@mayfair-accounting.co.uk</p>
         </div>
       </div>
     </footer>
+  
+    <!-- MODAL -->
+
+    <!--ABOUT US -->
+    <div class="modal fade" id="learnMore" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel">About Us</h5>
+            <div class="modal-close">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+          <div class="modal-body">
+            <p class="modal-paragraph">We are a friendly team made up of expereinced accountants and financial advisors who are here to support, advise and take your business to the next level. We work with individuals and businesses in various sectors from building and construction, financial services, recruitment, haulage and social media.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MORE SERVICES-->
+
+    <div class="modal fade" id="moreServices" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel">More Services</h5>
+            <div class="modal-close">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+          <div class="modal-body">
+            <p class="modal-paragraph">We now have a team specialising solely in Social Media, music and entertainment. Whether it is
+              advise in development, cross branding, tax, accounting and financial advise we can help.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--SCRIPT FOR MODAL-->
+    <script>
+    $('#learnMore').on('shown.bs.modal', function () {
+      $('#myInput').trigger('focus')
+    })
+    </script>
+
     <script src="js/accordion.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- <div class="popup" id="popup">
       <div class="popup__content">
@@ -237,6 +307,7 @@
         </div>
       </div>      
     </div> -->
+    
     <!-- GRID BOILER PLATE-->
     <!--
     <section class="grid-test">

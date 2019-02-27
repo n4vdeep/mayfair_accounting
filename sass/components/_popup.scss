@@ -1,78 +1,72 @@
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  background-color: rgba($color-black, .85);
-  z-index: 9999;
-  opacity: 0;
-  visibility: hidden;
-  transition: all .3s;
+.modal-dialog {
+  max-width: 500px;
+  margin: 18rem 5rem;
+}
 
-  @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: rgba($color-black, .3);
-  }
 
-  &__content {
-    @include centerHV;
-    width: 75%;
-    //height: 50rem;
-    background-color: $color-white;
-    box-shadow: 0 2rem 4rem rgba($color-black, .2);
-    border-radius: 3px;
-    display: table;
-    overflow: hidden;
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(.25);
-    transition: all .5s .2s;
-    
-    &__grid-container {
-      display: grid;
-      grid-template-columns: 30px 30px 30px 60px;
-    }
-  }
+.modal-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid $color-tertiary-light;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: 0.3rem;
+}
 
-  &____grid-itemL {
-    width: 100px;
-    height: 100px;
-  }
+.modal-title {
+  font-size: 2.5rem;
+  margin-left: 2.5rem;
+  text-transform: uppercase;
+}
 
-  &____grid-itemR {
-    width: 100px;
-    height: 100px;
-  }
+.close {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: red;
+  justify-content: end;
+}
 
-  // OPEN STATES
+.modal-header .close {
+  padding: 1rem 1rem;
+  margin: 0;
+}
 
-  &:target {
-    opacity: 1;
-    visibility: visible;
-  }
+.modal-paragraph {
+  padding: 3rem;
+  font-size: 2.2rem;
+}
 
-  &:target &__content {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
+.modal-footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 1rem;
+  border-top: 1px solid $color-tertiary-light;
+  border-bottom-right-radius: .3rem;
+  border-bottom-left-radius: .3rem;
+}
 
-  &__close {
-    &:link,
-    &:visited {
-      color: $color-grey-dark;
-      position: absolute;
-      top: 2.5rem;
-      right: 2.5rem;
-      font-size: 5rem;
-      text-decoration: none;
-      display: inline-block;
-      transition: all .2s;
-      line-height: 1;
-    }
+.btn-secondary {
+  margin: 10px;
+  color: #fff;
+  background-color: $color-tertiary-light;
+  border-color: #6c757d;
+}
 
-    &:hover {
-      color: $color-primary;
-    }
+.btn-secondary:hover {
+  color: #fff;
+}
+
+@media (min-width: 576px) {
+.modal-dialog {
+    max-width: 500px;
+    margin: 22rem auto;
   }
 }

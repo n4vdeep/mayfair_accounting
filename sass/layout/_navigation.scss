@@ -37,7 +37,8 @@
     right: 6.5rem;
     background-image: radial-gradient($color-secondary-dark, $color-primary-light);
     z-index: 1000;
-    transition: transform .8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: transform .7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
 
     @include respond(tab-port) {
       top: 4.5rem;
@@ -71,7 +72,7 @@
   }
 
   &__item {
-    margin: 1rem;
+    margin: .2rem;
   }
 
   &__link {
@@ -83,7 +84,7 @@
       padding: 1rem 1.5rem;
       color: $color-white;
       text-decoration: none;
-      text-transform: uppercase;
+      text-transform: capitalize;
       background-image: linear-gradient(112deg, transparent 0%, transparent 51%, $color-white 51%);
       background-size: 225%;
       transition: all .4s;
@@ -139,7 +140,7 @@
       content: "";
       position: absolute;
       left: 0;
-      transition: all .2s
+      transition: all .3s
     }
 
     &::before {top: -.8rem;};

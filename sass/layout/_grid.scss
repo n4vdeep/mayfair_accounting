@@ -30,12 +30,13 @@
       @include respond(tab-port){
         margin-right: 0; 
         margin-bottom: -100px;
-        padding-bottom: 30px;
+        padding-bottom: 65px;
       }
     }
 
     @include respond(tab-port){
-      width: 100% !important; 
+      width: 85% !important;
+      margin: 40px; 
     }
   }
 
