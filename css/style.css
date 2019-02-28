@@ -686,7 +686,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .story {
       width: 75%;
-      padding: 4rem;
+      padding: 7.5rem;
       padding-left: 7rem; } }
   @media only screen and (max-width: 37.5em) {
     .story {
@@ -718,7 +718,12 @@ body {
     backface-visibility: hidden;
     transition: all .5s; }
   .story__text {
-    transform: skewX(12deg); }
+    transform: skewX(12deg);
+    text-align: justify;
+    padding: 20px; }
+    @media only screen and (max-width: 37.5em) {
+      .story__text {
+        padding: 4px; } }
     @media only screen and (max-width: 37.5em) {
       .story__text {
         transform: skewX(0); } }
@@ -746,6 +751,24 @@ body {
   .story:hover .story__img {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(70%); }
+  .story .ratings {
+    display: inline-flex;
+    transform: skewX(12deg);
+    margin-left: 50rem; }
+    @media only screen and (max-width: 56.25em) {
+      .story .ratings {
+        display: inline-flex;
+        transform: skewX(12deg);
+        margin-left: 52.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .story .ratings {
+        display: flex;
+        justify-content: end;
+        transform: skewX(0);
+        margin-left: 0; } }
+    .story .ratings .quote {
+      font-size: 1.3rem;
+      color: #5F318A; }
 
 .footer {
   background-color: #333;
