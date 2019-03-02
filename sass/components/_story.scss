@@ -100,7 +100,8 @@
   }
 
   .ratings {
-    display: inline-flex;
+    display: flex;
+    justify-content: flex-end;
     transform: skewX(12deg);
     margin-left: 50rem;
     
