@@ -764,7 +764,6 @@ body {
     @media only screen and (max-width: 37.5em) {
       .story .ratings {
         display: flex;
-        justify-content: end;
         transform: skewX(0);
         margin-left: 0; } }
     .story .ratings .quote {
